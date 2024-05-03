@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body{
+    font-family: 'Abel', sans-serif;
+    
+}
+
+
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+li{font-size: 1.25em;}
+form{font-size: 1.25em;}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(50, 109, 94);
+}
+
+button:hover{
+    background-color: rgb(107, 107, 107);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.color-acento{color:rgb(26, 65, 55);}
+header{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    
+    margin: 0 auto;
+}
+.content{
+    min-height: 80px;
+
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(8, 88, 112);
+
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(237, 240, 240);
+    display: block;
+    font-weight: bold;
+
+
+}
+.menu .navbar ul li a:hover{
+    color: rgb(107, 107, 107);
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}   
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.header-content{
+
+    text-align: center;
+      
+}
+    
+.header-content h1{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-bottom: 35px;
+}
+ 
+#intro{
+    background-color: rgb(185, 197, 197);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} 
+#intro .container {
+   
+    
+    padding: 80px 0px;
+    
+        
+}
+.container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    padding: 15px 15px;
+    color: #000;
+    
+
+}
+.container p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px 35px;
+    color: #000;
+    
+
+}
+#intro img{
+    
+    position: relative;
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin:auto;
+    border-radius: 5px;
+    border: #000 1px solid;
+    padding: 5px;
+   
+}
+#intro .sabermas{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px 35px;
+    color: #fcf7f7;
+    background-color: rgb(26, 65, 55);
+    border-radius: 5px;
+    border: #000 1px solid;
+    margin:auto;
+   
+    
+}
+#nuestros-cursos{
+    
+    background-color:rgb(14, 23, 36);
+    min-height: 100vh;
+}
+#nuestros-cursos h2{
+    
+    color: rgb(194, 193, 193);
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 40px;
+   
+    background-color: rgb(14, 23, 36);
+    
+    
+
+}
+
+#nuestros-cursos h4{
+    
+    color: rgb(194, 193, 193);
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 25px;
+
+}
+
+#nuestros-cursos .containerCards{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:rgb(14, 23, 36);
+
+    
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    
+}
+
+.card .face  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front {
+    
+
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+  
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4))
+    ,url('img/card.jpg');
+    
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.card .back img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+.card .back p {
+        color: #f0e8d4;
+        font-size: 1.3em;
+        font-style: italic;
+        font-weight: lighter;
+        margin: auto;
+       
+        text-align: center;
+
+        
+        z-index: 1; 
+    }
+
+
+
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+      
+#acercadenos .container{
+        background-color: #22454e;
+        background-size: cover;
+       
+        
+        max-width: 1800px;
+        min-height: 60vh;
+        text-align: center;
+       
+        color: rgb(221, 218, 218);
+        text-align: center;
+        padding: 40px 12px;
+       }
+
+#acercadenos h2{
+        font-size: 40px;
+        padding: 20px 0 0 0;
+        color: #fdfcfc;
+        text-align: center;
+        
+    }
+
+#acercadenos li{
+        margin: 15px 0px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+#contacto .container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url(img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1800px;
+        color: rgb(255, 253, 253);
+        text-align: center;
+        padding: 80px 12px;
+    }
+    #contacto h2{
+        font-size: 40px;
+        padding: 20px 0 0 0;
+        color: #fcf8f8;
+        text-align: center;
+        
+    }
+footer{
+        background-color: #22454e;
+        background-size: cover;
+        max-width: 1800px;
+        min-height: 30vh;
+
+        
+        color: rgb(212, 212, 212);
+        text-align: center;
+        padding: 50px 22px;
+        
+        
+        
+    }
+    footer p{
+        margin: 0px;
+    }
+    footer a{
+        color: rgb(66, 212, 200);
+    }
+
+@media(max-width: 991px) {
+    .content {
+        min-height: 70px;
+        
+    }
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #22454e;
+        display: none;
+
+    }
+    
+
+    
+    #menu:checked ~ .navbar {
+        display: initial;
+
+    }
+    .header {
+        min-height: 0vh;
+
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+    .header-content p {
+        padding: 0;
+    }
+    #intro .container{
+        padding: 30px;
+    }
+    #intro img{
+        display: none;
+    }
+    #intro h2{
+        
+        padding: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    #intro p{
+        padding: 20;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+   
+    #nuestros-cursos .containerCards{
+        
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+   
